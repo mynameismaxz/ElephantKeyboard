@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ElephantKeyboard</string>
+    <string name="subtype_en_US">English (US)</string>
+    <string name="subtype_th_TH">Thai (TH)</string>
+</resources>
