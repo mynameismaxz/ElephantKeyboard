@@ -15,8 +15,7 @@
         <Key android:codes="3592" android:keyLabel="จ"/>
         <Key android:codes="3586" android:keyLabel="ข"/>
         <Key android:codes="3594" android:keyLabel="ช" />
-        <Key android:codes="-5" android:keyLabel="DEL"
-            android:keyWidth="16%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="16%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="3654" android:keyLabel="ๆ" android:keyEdgeFlags="left"/>
@@ -59,9 +58,10 @@
         <Key android:codes="3613" android:keyLabel="ฝ" android:keyEdgeFlags="right"/>
     </Row>
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-98" android:keyLabel="EN" android:keyWidth="20%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="40%p" android:isRepeatable="true"/>
-        <Key android:codes="-3" android:keyLabel="Syms" android:keyWidth="20%p" />
+        <Key android:codes="-98" android:keyLabel="EN" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-9" android:keyLabel="Hand" android:keyWidth="15%p" />
+        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="35%p" android:isRepeatable="true"/>
+        <Key android:codes="-3" android:keyLabel="Syms" android:keyWidth="15%p" />
         <Key android:codes="-4" android:keyLabel="Enter" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>

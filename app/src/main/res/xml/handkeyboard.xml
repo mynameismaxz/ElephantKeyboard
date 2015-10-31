@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="50dp"
+    >
+
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-98" android:keyLabel="EN" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-99" android:keyLabel="TH" android:keyWidth="15%p"/>
+        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="35%p" android:isRepeatable="true"/>
+        <Key android:codes="-3" android:keyLabel="Syms" android:keyWidth="15%p" />
+        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>

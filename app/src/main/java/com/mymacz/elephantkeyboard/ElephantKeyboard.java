@@ -33,6 +33,7 @@ public class ElephantKeyboard extends InputMethodService
     static final int KEYCODE_SYMS = -3;
     static final int KEYCODE_THAI_CAP = -2;
     static final int KEYCODE_EN_CAP = -1;
+    static final int KEYCODE_HAND = -9;
 
     // initial keyboard view
     private KeyboardView kv;
@@ -41,7 +42,7 @@ public class ElephantKeyboard extends InputMethodService
     private Keyboard keyboardSyms;
     private Keyboard keyboardTH_CAP;
     private Keyboard keyboardEN_CAP;
-
+    private Keyboard keyboard_HAND;
 
     @Override
     public View onCreateInputView() {
@@ -52,6 +53,7 @@ public class ElephantKeyboard extends InputMethodService
         keyboardSyms = new Keyboard(this,R.xml.syms);
         keyboardTH_CAP = new Keyboard(this,R.xml.qwertyth_shift);
         keyboardEN_CAP = new Keyboard(this,R.xml.qwerty_shift);
+        keyboard_HAND = new Keyboard(this,R.xml.handkeyboard);
         kv.setKeyboard(keyboardEN);
         kv.setOnKeyboardActionListener(this);
         kv.invalidateAllKeys();
@@ -72,6 +74,11 @@ public class ElephantKeyboard extends InputMethodService
         InputConnection ic = getCurrentInputConnection();
         playClick(primaryCode);
         switch (primaryCode) {
+            case KEYCODE_HAND:
+                kv.setKeyboard(keyboard_HAND);
+                kv.setOnKeyboardActionListener(this);
+                kv.invalidateAllKeys();
+                break;
             case KEYCODE_CHANGE_LANGUAGETH:
                 kv.setKeyboard(keyboardTH);
                 kv.setOnKeyboardActionListener(this);
